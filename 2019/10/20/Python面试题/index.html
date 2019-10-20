@@ -55,18 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="title: Python面试题date: 2019-10-20tags: Codingcategories: 编程实践mathjax: true  Table of Contents  Python语言特性 1 Python的函数参数传递 2 Python中的元类(metaclass) 3 @staticmethod和@classmethod 4 类变量和实例变量 5 Python自省 6 字典">
+  <meta name="description" content="Table of Contents  Python语言特性 1 Python的函数参数传递 2 Python中的元类(metaclass) 3 @staticmethod和@classmethod 4 类变量和实例变量 5 Python自省 6 字典推导式 7 Python中单下划线和双下划线 8 字符串格式化:\x和.format 9 迭代器和生成器 10 args and *kwargs&amp;l">
+<meta name="keywords" content="Coding">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mango and Orange">
+<meta property="og:title" content="Python面试题">
 <meta property="og:url" content="http://yoursite.com/2019/10/20/Python面试题/index.html">
 <meta property="og:site_name" content="Mango and Orange">
-<meta property="og:description" content="title: Python面试题date: 2019-10-20tags: Codingcategories: 编程实践mathjax: true  Table of Contents  Python语言特性 1 Python的函数参数传递 2 Python中的元类(metaclass) 3 @staticmethod和@classmethod 4 类变量和实例变量 5 Python自省 6 字典">
+<meta property="og:description" content="Table of Contents  Python语言特性 1 Python的函数参数传递 2 Python中的元类(metaclass) 3 @staticmethod和@classmethod 4 类变量和实例变量 5 Python自省 6 字典推导式 7 Python中单下划线和双下划线 8 字符串格式化:\x和.format 9 迭代器和生成器 10 args and *kwargs&amp;l">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://hi.csdn.net/attachment/201106/28/0_1309244136MWLP.gif">
-<meta property="og:updated_time" content="2019-10-20T00:03:21.779Z">
+<meta property="og:updated_time" content="2019-10-20T00:09:32.438Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mango and Orange">
-<meta name="twitter:description" content="title: Python面试题date: 2019-10-20tags: Codingcategories: 编程实践mathjax: true  Table of Contents  Python语言特性 1 Python的函数参数传递 2 Python中的元类(metaclass) 3 @staticmethod和@classmethod 4 类变量和实例变量 5 Python自省 6 字典">
+<meta name="twitter:title" content="Python面试题">
+<meta name="twitter:description" content="Table of Contents  Python语言特性 1 Python的函数参数传递 2 Python中的元类(metaclass) 3 @staticmethod和@classmethod 4 类变量和实例变量 5 Python自省 6 字典推导式 7 Python中单下划线和双下划线 8 字符串格式化:\x和.format 9 迭代器和生成器 10 args and *kwargs&amp;l">
 <meta name="twitter:image" content="http://hi.csdn.net/attachment/201106/28/0_1309244136MWLP.gif">
   <link rel="canonical" href="http://yoursite.com/2019/10/20/Python面试题/">
 
@@ -82,7 +83,7 @@
   };
 </script>
 
-  <title> | Mango and Orange</title>
+  <title>Python面试题 | Mango and Orange</title>
   
 
 
@@ -252,7 +253,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            
+            Python面试题
             
 
           
@@ -269,12 +270,29 @@
                 
               
 
-              <time title="创建时间：2019-10-20 07:58:52 / 修改时间：08:03:21" itemprop="dateCreated datePublished" datetime="2019-10-20T07:58:52+08:00">2019-10-20</time>
+              <time title="创建时间：2019-10-20 08:08:06 / 修改时间：08:09:32" itemprop="dateCreated datePublished" datetime="2019-10-20T08:08:06+08:00">2019-10-20</time>
             </span>
           
             
 
             
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程实践/" itemprop="url" rel="index">
+                    <span itemprop="name">编程实践</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -288,8 +306,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>title: Python面试题<br>date: 2019-10-20<br>tags: Coding<br>categories: 编程实践<br>mathjax: true</p>
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+        <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 <p><strong>Table of Contents</strong></p>
 <ul>
 <li><a href="#python语言特性">Python语言特性</a><ul>
@@ -1056,6 +1073,15 @@
       
 
       <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/Coding/" rel="tag"># Coding</a>
+            
+          </div>
+        
 
         
 
@@ -1144,7 +1170,7 @@
       
       <div class="site-state-item site-state-categories">
         
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span>
         
       </div>
@@ -1157,7 +1183,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
