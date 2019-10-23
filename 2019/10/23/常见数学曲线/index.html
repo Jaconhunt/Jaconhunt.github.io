@@ -65,7 +65,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/10/23/常见数学曲线/cycloid.gif">
 <meta property="og:image" content="http://yoursite.com/2019/10/23/常见数学曲线/Cycloid.png">
-<meta property="og:updated_time" content="2019-10-23T14:01:24.396Z">
+<meta property="og:updated_time" content="2019-10-23T14:50:06.470Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常见数学曲线">
 <meta name="twitter:description" content="常见数学曲线我们生活中或接触过或听闻过以下曲线，现做曲线积累与原理详细推导，主要包含摆线、阿基米德螺旋线，贝塞尔曲线， 最速曲线，渐开线，高斯正态分布曲线等。 1.  摆线定义圆上一点随圆在直线上滚动产生的路径为摆线。1599年Galileo为摆线命名，1634年Roberval指出摆线下方的面积是生成它的圆面积的三倍。1658年Christopher Wren也向人们指出摆线的长度是生成它的圆直">
@@ -271,7 +271,7 @@
                 
               
 
-              <time title="创建时间：2019-10-23 20:20:17 / 修改时间：22:01:24" itemprop="dateCreated datePublished" datetime="2019-10-23T20:20:17+08:00">2019-10-23</time>
+              <time title="创建时间：2019-10-23 20:20:17 / 修改时间：22:50:06" itemprop="dateCreated datePublished" datetime="2019-10-23T20:20:17+08:00">2019-10-23</time>
             </span>
           
             
@@ -536,6 +536,56 @@
 
   
 
+  
+    
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.staticfile.org/MathJax/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
   
 
   
