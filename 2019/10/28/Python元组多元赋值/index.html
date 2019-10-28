@@ -63,7 +63,7 @@
 <meta property="og:site_name" content="Mango and Orange">
 <meta property="og:description" content="元组多元赋值123456789def  fib(max):    n, a, b = 0, 0, 1    while n &amp;lt; max:        print(b)        a , b = b, a + b        n += 1    return &apos;done&apos;fib(6) # 1 1 2 3 5 8 看到网络上有人提问，此处a, b = b, a+b, 为何b = 0 +1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-28T09:10:12.105Z">
+<meta property="og:updated_time" content="2019-10-28T09:15:09.901Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python元组多元赋值">
 <meta name="twitter:description" content="元组多元赋值123456789def  fib(max):    n, a, b = 0, 0, 1    while n &amp;lt; max:        print(b)        a , b = b, a + b        n += 1    return &apos;done&apos;fib(6) # 1 1 2 3 5 8 看到网络上有人提问，此处a, b = b, a+b, 为何b = 0 +1">
@@ -268,7 +268,7 @@
                 
               
 
-              <time title="创建时间：2019-10-28 16:45:16 / 修改时间：17:10:12" itemprop="dateCreated datePublished" datetime="2019-10-28T16:45:16+08:00">2019-10-28</time>
+              <time title="创建时间：2019-10-28 16:45:16 / 修改时间：17:15:09" itemprop="dateCreated datePublished" datetime="2019-10-28T16:45:16+08:00">2019-10-28</time>
             </span>
           
             
@@ -305,13 +305,10 @@
 
       
         <h1 id="元组多元赋值"><a href="#元组多元赋值" class="headerlink" title="元组多元赋值"></a>元组多元赋值</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span>  <span class="title">fib</span><span class="params">(max)</span>:</span></span><br><span class="line">    n, a, b = <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> n &lt; max:</span><br><span class="line">        print(b)</span><br><span class="line">        a , b = b, a + b</span><br><span class="line">        n += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'done'</span></span><br><span class="line"></span><br><span class="line">fib(<span class="number">6</span>) <span class="comment"># 1 1 2 3 5 8</span></span><br></pre></td></tr></table></figure>
-<p>看到网络上有人提问，此处a, b = b, a+b, 为何b = 0 +1, 而非 1+1</p>
-<p>要想理解这点需要明白此种写法为python的特性，称为<strong>元组拆包</strong>，它的特点为平行赋值，同时进行，即把一</p>
-<p>个可迭代对象里的元素，一并赋值到对应变量组成的元组中。与下面写法等价</p>
+<p>看到网络上有人提问，此处a, b = b, a+b, 为何b = 0 +1, 而非 1+1。要想理解这点需要明白此种写法为python的特性，称为<strong>元组拆包</strong>，它的特点为平行赋值，同时进行，即把一个可迭代对象里的元素，一并赋值到对应变量组成的元组中。与下面写法等价</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span>  <span class="title">fib</span><span class="params">(max)</span>:</span></span><br><span class="line">    (n, a, b) = (<span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>)</span><br><span class="line">    <span class="keyword">while</span> n &lt; max:</span><br><span class="line">        print(b)</span><br><span class="line">        <span class="comment"># print(id(a))</span></span><br><span class="line">        (a, b) = (b, a + b)</span><br><span class="line">        <span class="comment"># print(id(a))</span></span><br><span class="line">        n += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'done'</span></span><br><span class="line"></span><br><span class="line">fib(<span class="number">6</span>)</span><br></pre></td></tr></table></figure>
 <p>此外Python元组多元赋值还有需要注意的如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(a,b) = (<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line">print(id((a,b))) <span class="comment"># 2901947709000</span></span><br><span class="line">(a,b) = (<span class="string">"string"</span>,<span class="number">2</span>)</span><br><span class="line">print(id((a,b))) <span class="comment"># 2901947709000</span></span><br></pre></td></tr></table></figure></p>
-<p>此处看到两tuple不同，但id居然相同，解释为(a, b) 实际上是临时分配的一个变量，由于没有引用可能马上释放。</p>
-<p>(1, 2) 和 (‘string’, 2) 如果凑巧在相同位置，看上去 id 值一样，实际上之前的已经释放，内容已经改变</p>
+<p>此处看到两tuple不同，但id居然相同，解释为(a, b) 实际上是临时分配的一个变量，由于没有引用可能马上释放。(1, 2) 和 (‘string’, 2) 如果凑巧在相同位置，看上去 id 值一样，实际上之前的已经释放，内容已经改变</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">c = (a,b) = (<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line"><span class="keyword">print</span> (id(c)) <span class="comment"># 2295325353672</span></span><br><span class="line">d = (a,b) = (<span class="string">"string"</span>,<span class="number">2</span>)</span><br><span class="line"><span class="keyword">print</span> (id(d)) <span class="comment"># 2295329845704</span></span><br></pre></td></tr></table></figure>
 <h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol>
 <li>《Fluent Python》，Luciano Ramalho</li>
